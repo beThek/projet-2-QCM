@@ -1,44 +1,168 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
+
 <head>
-	<title>QCM</title>
-	<meta <meta charset="UTF-8">
-
-	<!-- css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>QuiZ</title>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-</head>
-<h1>projet-2-QCM</h1>
-<body>
-	<div class="container-fluid">
-		<div class="container">
-			<div class="row">
-				<article class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<h2>mon article</h2>
-<form>
-<ol>
-  <li>1 : La bonne réponse est A</li>
-  <ul>
-  	<li><input type = "radio" name ="q1" value = "correct">Réponse A</li>
-  	<li><input type = "radio" name ="q1" value = "wrong">Réponse B</li>
-  	<li><input type = "radio" name ="q1" value = "wrong">Réponse C</li>
-  </ul>
-  <li>La bonne réponse est B</li>
-  <ul>
-  	<li><input type = "radio" name ="q2" value = "wrong">Réponse A</li>
-  	<li><input type = "radio" name ="q2" value = "correct">Réponse B</li>
-  	<li><input type = "radio" name ="q2" value = "wrong">Réponse C</li>
-  </ul>
-  <li>La bonne réponse est C</li>
-  <ul>
-  	<li><input type = "radio" name ="q3" value = "wrong">Réponse A</li>
-  	<li><input type = "radio" name ="q3" value = "wrong">Réponse B</li>
-  	<li><input type = "radio" name ="q3" value = "correct">Réponse C</li>
-  </ul>
-</ol>
-<button class="btn btn-default">ENVOYER</button>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</form>
+</head>
+
+<body>
+<!--- TEST CAROUSEL --------------------------->
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+</div>
+
+<!--- TEST CAROUSEL --------------------------->
+
+
+
+
+<div class="container text-center">
+	<div class="row">
+
+			 <h1>QUIZ</h1>
+
+				 <form class="form-inline" action="reponses.php"  method="post"  >
+		  	 	 <div class="form-group">
+		    		<label for="labelemail">Name</label>
+		    		<input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+		  		</div>
+		  		<div class="form-group">
+		    		<label for="exampleInputEmail2">Email</label>
+		    		<input type="email" class="form-control" name="mail" id="mail" placeholder="youremail@demo.com">
+		  		</div>
+
+				 <ol>
+					 <li>
+
+  				 <h3>Quelle est la distribution linux la plus connue ? </h3>
+
+  			 <div>
+			    <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+			  	<label for="question-1-answers-A">A) Arch Linux </label>
+			  </div>
+
+		    <div>
+		    	<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+		    	<label for="question-1-answers-B">B) Ubuntu</label>
+		    </div>
+
+		    <div>
+		      <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+		      <label for="question-1-answers-C">C) Kali linux</label>
+		    </div>
+
+
+				</li>
+
+  			<li>
+  				<h3>Comment s'appelle la dernière version de Arch Linux au niveau de la sécurité</h3>
+
+			  <div>
+					<input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+			    <label for="question-2-answers-A">A) Arch Linux</label>
+			  </div>
+
+			  <div>
+					<input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+			  	<label for="question-2-answers-B">B) Linux Antergos</label>
+			  </div>
+
+		    <div>
+					<input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+		    	<label for="question-2-answers-C">C) Black Arch Linux</label>
+		    </div>
+
+		  </li>
+			<li>
+	  		<h3>Qu'est ce que le bitcoin ? </h3>
+
+		    <div>
+		  		<input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+		  		<label for="question-3-answers-A">A) Une monnaie cryptée</label>
+		  </div>
+
+		  <div>
+		  		<input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+		      <label for="question-3-answers-B">B) Une nouvelle devise</label>
+		  </div>
+
+			<div>
+		  	<input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+		    <label for="question-3-answers-C">C) Un nouveau software</label>
+			</div>
+			<li>
+			<h3>Que veut dire ETH ? </h3>
+
+			<div>
+				<input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+				<label for="question-4-answers-A">A) Ether</label>
+		</div>
+
+		<div>
+				<input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+				<label for="question-4-answers-B">B) Ethereum</label>
+		</div>
+
+		<div>
+			<input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+			<label for="question-4-answers-C">C) EMS</label>
+		</div>
+	</li>
+	<li>
+		<h3>Qu'est-ce que Tor? </h3>
+
+		<div>
+			<input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+			<label for="question-5-answers-A">A) Navigateur anonyme</label>
+	</div>
+
+	<div>
+			<input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+			<label for="question-5-answers-B">B) un Nounours</label>
+	</div>
+
+	<div>
+		<input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+		<label for="question-5-answers-C">C) Un nouveau hardware</label>
+	</div>
+	</li>
+
+			</li>
+
+</ol>
+
+            <input type="submit" name="envoyer" value="Submit Quiz" />
+
+		</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js">
+
+</script>
+
 </body>
+
 </html>
