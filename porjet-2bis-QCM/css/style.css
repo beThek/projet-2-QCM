@@ -1,0 +1,33 @@
+body {
+  background-color: #e2a1a0;
+  font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+
+}
+
+header {
+  background-color:#813248;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ text-align: center;
+ text-transform: uppercase;
+ margin-bottom: 100px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  
+
+
+
+}
+
+footer {
+  clear: both;
+  background-color: #d36c89;
+  padding: 50px 0;
+  text-align: center;
+}
